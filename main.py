@@ -12,7 +12,7 @@ if __name__ == '__main__':
   }
 
   for (category_name, category_id) in categories.items():
-    print(f'[!] Started parsing {category_name}')
+    print(f'[*] Started parsing {category_name}')
 
     products = get_products_from_category(category_id)
     dataset[category_name] = products
