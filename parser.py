@@ -23,7 +23,7 @@ def get_products(html):
 
       products.append({
         'image': product_html.find('img').get('src'),
-        'name': get_span_text_of_class('prodName'),
+        'name': get_span_text_of_class('prodName')[0],
         'price': price,
       })
     except:

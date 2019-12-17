@@ -1,15 +1,9 @@
+from data import categories
 from products import get_products_from_category
 import json
 
 if __name__ == '__main__':
   dataset = {}
-  categories = {
-    '간편식사': 10,
-    '즉석요리': 20,
-    '과자류': 30,
-    '식품': 50,
-    '음료': 60,
-  }
 
   for (category_name, category_id) in categories.items():
     print(f'[*] Started parsing {category_name}')
